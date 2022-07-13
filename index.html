@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#74ACDF">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Escarapela de Argentina</title>
+</head>
+
+<body>
+    <div class="container">
+        <svg class="escarapela" viewBox="0 0 602 602" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M301 601C466.685 601 601 466.685 601 301C601 135.315 466.685 1 301 1C135.315 1 1 135.315 1 301C1 466.685 135.315 601 301 601Z"
+                fill="#74ACDF" />
+            <path
+                d="M301 501C411.457 501 501 411.457 501 301C501 190.543 411.457 101 301 101C190.543 101 101 190.543 101 301C101 411.457 190.543 501 301 501Z"
+                fill="white" />
+            <path
+                d="M301 401C356.228 401 401 356.228 401 301C401 245.772 356.228 201 301 201C245.772 201 201 245.772 201 301C201 356.228 245.772 401 301 401Z"
+                fill="#74ACDF" />
+        </svg>
+    </div>
+
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(registration => {
+                    console.log('Service Worker Registered')
+                })
+                .catch(error => {
+                    console.error('Service Worker Failed', error)
+                })
+        }
+    </script>
+</body>
+
+</html>
